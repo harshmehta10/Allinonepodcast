@@ -46,7 +46,7 @@ const Mobile = ({ isOpen, toggle }) => {
           </button>
         </div>
         <div>
-          <ul className=" flex flex-col lg:flex-row items-center space-y-8 md:space-x-8 lg:space-x-12  lg:block   ">
+          <ul className=" flex flex-col lg:flex-row items-center space-y-8   lg:block   ">
             {navbar.map((items, idx) => (
               <Link
                 to={items.path}

@@ -31,7 +31,7 @@ const Testimonial = () => {
 
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 pb-20 py-7 sm:py-12 ">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 pb-20 py-7 sm:py-14 ">
         <div className="flex flex-col lg:flex-row items-center space-y-20 lg:space-y-0">
           <div className="space-y-5  lg:space-y-7">
             <div className="space-y-6 lg:space-y-8">

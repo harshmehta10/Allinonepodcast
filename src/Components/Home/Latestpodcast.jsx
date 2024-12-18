@@ -53,31 +53,31 @@ const Latestpodcast = () => {
     },
   ];
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-6 sm:py-12 space-y-10 pb-14">
+    <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 space-y-10 pb-14">
       <div className="flex items-center justify-between">
         {/* Header Section */}
         <h1 className="text-32 text-[#68BF33]">Latest Podcast</h1>
-        <button className="text-[#55B719] border-[#55B719] border rounded-[120px] py-5 px-16">
+        <button className="text-[#55B719] border-[#55B719] border rounded-[120px] py-3 px-8 lg:py-5 lg:px-16">
           View All
         </button>
       </div>
 
       <div className="relative">
-        <div className="swiper-button-prev  cursor-pointer top-full lg:top-1/4 left-0 absolute z-20  ">
+        <div className="swiper-button-prev  cursor-pointer top-1/2 lg:top-1/4 left-0 absolute z-20  ">
           <button className="border rounded-[120px] bg-[#55B719]">
             <img
               src={arrowlftblack}
               alt="arrowback"
-              className="py-2 px-6 lg:py-4 lg:px-12"
+              className="py-2 px-3 lg:py-4 lg:px-12"
             />
           </button>
         </div>
-        <div className="swiper-button-next absolute z-20   right-0 top-full lg:top-1/4 cursor-pointer">
+        <div className="swiper-button-next absolute z-20   right-0 top-1/2 lg:top-1/4 cursor-pointer">
           <button className=" border rounded-[120px] bg-[#55B719]">
             <img
               src={arrowrgtwhite}
               alt="arrownxt"
-              className="py-2 px-6 lg:py-4 lg:px-12"
+              className="py-2 px-3 lg:py-4 lg:px-12"
             />
           </button>
         </div>
@@ -91,12 +91,13 @@ const Latestpodcast = () => {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           }}
+          loop={true}
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 2 },
           }}
-          className="lg:w-[80%] mx-auto"
+          className="w-[68%] lg:w-[80%] mx-auto"
         >
           {podcasts.map((podcast, index) => (
             <SwiperSlide key={index}>

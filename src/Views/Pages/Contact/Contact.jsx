@@ -76,7 +76,7 @@ const Contact = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 xl:gap-10">
           <div>
             <h1 className="font-manrope font-medium text-42">Our Office</h1>
             <div className="flex items-start gap-5 py-3">
@@ -102,7 +102,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div className="space-y-2">
             <h1 className="font-manrope font-medium text-42">Email Us at</h1>
             <p className="font-manrope font-light text-22 text-[#55B719]">
               help@allinonepodast.com

@@ -50,7 +50,7 @@ const Header = () => {
               <img src={logo} alt="logo" className="w-24 lg:w-auto" />
             </Link>
 
-            <ul className=" flex-col lg:flex-row items-center space-x-4 md:space-x-8 lg:space-x-12 hidden lg:block   ">
+            <ul className=" flex-col lg:flex-row items-center space-x-4 md:space-x-5 lg:space-x-5 xl:space-x-12 hidden lg:block   ">
               {navbar.map((items, idx) => (
                 <Link
                   to={items.path}

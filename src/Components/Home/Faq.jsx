@@ -25,7 +25,7 @@ const Faq = () => {
   ];
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-6 sm:py-12 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 overflow-hidden">
         <div>
           <h1 className="text-32 text-[#68BF33]">FAQs</h1>
         </div>
@@ -36,19 +36,19 @@ const Faq = () => {
                 className="flex justify-between items-center cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
-                <h1 className="font-manrope font-light text-lg md:text-xl lg:text-[24px] text-[#4B4B4B]">
+                <h1 className="font-manrope font-light text-base md:text-xl lg:text-[24px] text-[#4B4B4B]">
                   {faq.question}
                 </h1>
-                <div>
+                <div className="flex-shrink-0">
                   <img
                     src={openIndex === index ? minus : plus}
                     alt={openIndex === index ? "minus" : "plus"}
-                    className="w-1/2 md:w-auto"
+                    className="w-8 md:w-8 lg:w-10 h-auto" // Ensures the image scales correctly
                   />
                 </div>
               </div>
               {openIndex === index && (
-                <p className=" font-light font-manrope text-lg lg:text-[22px] text-[#55B719]">
+                <p className="font-light font-manrope text-xs lg:text-[22px] text-[#55B719]">
                   {faq.answer}
                 </p>
               )}
@@ -59,5 +59,4 @@ const Faq = () => {
     </div>
   );
 };
-
 export default Faq;
