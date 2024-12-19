@@ -93,7 +93,10 @@ const Process = () => {
           </div>
         </div>
 
-        <div className="bg-[#55B719] rounded-[450px] flex items-center justify-center  border-[#68BF33] border-8 relative overflow-hidden py-20 px-5  md:py-28 md:px-5 lg:py-36 lg:px-5">
+        <div
+          className="bg-[#55B719] rounded-[450px] flex items-center justify-center  border-[#68BF33] border-8 relative overflow-hidden py-20 px-5  md:py-28 md:px-5 lg:py-36 lg:px-5 group"
+          data-aos="zoom-in"
+        >
           <div className="bg-black w-full h-full absolute bg-opacity-20 "></div>
           <h1 className="text-center text-white font-manrope font-medium text-xl md:text-4xl lg:text-7xl max-w-[800px]  ">
             Podcast hosting to manage and monetize your podcast
@@ -105,16 +108,17 @@ const Process = () => {
               className="absolute z-50 right-10 md:right-20 lg:right-48 top-10 w-10  lg:w-auto "
             />
           </div>
+
           <img
             src={playbtn}
             alt=""
-            className="absolute z-10 -translate-y-1/2 top-1/2 -translate-x-1/2 left-1/2 size-1/2  lg:size-auto"
+            className="absolute z-10 -translate-y-1/2 top-1/2 -translate-x-1/2 left-1/2 size-1/2  lg:size-auto group-hover:scale-105 transition-all duration-500"
           />
           <div>
             <img
               src={player}
               alt="player"
-              className="absolute -bottom-5 lg:bottom-10 -translate-x-1/2 left-1/2 size-1/2 md:size-auto"
+              className="absolute -bottom-5 lg:bottom-10 -translate-x-1/2 left-1/2 size-1/2 md:size-auto "
             />
           </div>
         </div>

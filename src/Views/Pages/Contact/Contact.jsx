@@ -7,10 +7,17 @@ const Contact = () => {
     <div>
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 space-y-6 lg:space-y-12">
         <div>
-          <h2 className="text-[#4B4B4B] font-manrope font-light text-22">
+          <h2
+            className="text-[#4B4B4B] font-manrope font-light text-22"
+            data-aos="fade-right"
+          >
             Contact Us
           </h2>
-          <h1 className="font-manrope font-medium text-42">
+          <h1
+            className="font-manrope font-medium text-42"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
             How can we{" "}
             <span className="font-manrope font-medium text-42 text-[#55B719]">
               help you?
@@ -71,7 +78,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <button className="text-white bg-[#55B719] rounded-[120px] py-3 px-6">
+            <button className="text-white bg-[#55B719] rounded-[120px] py-3 px-6 btn">
               Let's Connect
             </button>
           </div>

@@ -55,9 +55,10 @@ const Header = () => {
                 <Link
                   to={items.path}
                   key={items.Element}
-                  className="font-manrope font-light text-sm md:text-lg lg:text-[22px] text-[#4B4B4B]"
+                  className="font-manrope font-light text-sm md:text-lg lg:text-[22px] text-[#4B4B4B] hover:text-[#55B719] transition-all duration-500 relative group"
                 >
                   {items.Element}
+                  <span className="w-0 group-hover:w-full h-0.5 transition-all duration-500  bg-[#55B719] absolute  -bottom-1 left-0"></span>
                 </Link>
               ))}
             </ul>

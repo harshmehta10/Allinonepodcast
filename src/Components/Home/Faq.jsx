@@ -31,9 +31,12 @@ const Faq = () => {
         </div>
         <div>
           {faqData.map((faq, index) => (
-            <div key={index} className="flex flex-col border-b py-2 lg:py-4">
+            <div
+              key={index}
+              className="flex flex-col border-b py-2 lg:py-4 space-y-1 lg:space-y-4"
+            >
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex justify-between items-center cursor-pointer "
                 onClick={() => toggleFAQ(index)}
               >
                 <h1 className="font-manrope font-light text-base md:text-xl lg:text-[24px] text-[#4B4B4B]">
@@ -43,12 +46,15 @@ const Faq = () => {
                   <img
                     src={openIndex === index ? minus : plus}
                     alt={openIndex === index ? "minus" : "plus"}
-                    className="w-8 md:w-8 lg:w-10 h-auto" // Ensures the image scales correctly
+                    className="w-8 md:w-8 lg:w-10 h-auto " // Ensures the image scales correctly
                   />
                 </div>
               </div>
               {openIndex === index && (
-                <p className="font-light font-manrope text-xs lg:text-[22px] text-[#55B719]">
+                <p
+                  className="font-light font-manrope text-xs lg:text-[18px] text-[#55B719] "
+                  data-aos="fade-right"
+                >
                   {faq.answer}
                 </p>
               )}

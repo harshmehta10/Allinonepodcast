@@ -43,20 +43,33 @@ const NewPodcastSetup = () => {
   ];
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 overflow-hidden">
         <div className="space-y-12">
           <div className="flex">
-            <h1 className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-[52px]  border-[#55B719] border-2 rounded-[120px] py-3 px-5 lg:py-7 lg:px-20">
+            <h1
+              className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-[52px]  border-[#55B719] border-2 rounded-[120px] py-3 px-5 lg:py-7 lg:px-20"
+              data-aos="fade-right"
+            >
               01.
             </h1>
-            <h1 className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-[52px] bg-[#55B719] text-white rounded-[120px]  py-3 px-5 lg:py-7 lg:px-20">
+            <h1
+              className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-[52px] bg-[#55B719] text-white rounded-[120px]  py-3 px-5 lg:py-7 lg:px-20"
+              data-aos="fade-left"
+              data-aos-delay="800"
+            >
               New Podcast Setup
             </h1>
           </div>
           <div className="flex flex-col lg:flex-row  gap-10 ">
             <div className="space-y-5">
               {podcast.map((items, idx) => (
-                <div key={items.id} className="flex items-center gap-7">
+                <div
+                  key={items.id}
+                  className="flex items-center gap-7"
+                  data-aos="fade-down"
+                  data-aos-delay={`${idx * 50}`}
+                  data-aos-offset="100"
+                >
                   <div>
                     <div className="w-20 h-10 lg:w-28 lg:h-16  border-[#55B719] border rounded-[120px] flex items-center justify-center">
                       <img src={tick} alt="tick" className="" />
@@ -69,7 +82,12 @@ const NewPodcastSetup = () => {
               ))}
             </div>
             <div>
-              <img src={mictext} alt="" />
+              <img
+                src={mictext}
+                alt=""
+                data-aos="fade-left"
+                data-aos-delay="1000"
+              />
             </div>
           </div>
         </div>
