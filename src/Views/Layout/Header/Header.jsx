@@ -82,7 +82,7 @@ const Header = () => {
                 />
               </svg>
             </div>
-            <button className="border py-2 px-5 lg:py-5 lg:px-8 lg:text-white bg-[#55B719] rounded-full hidden lg:block ">
+            <button className="border py-2 px-5 lg:py-3 lg:px-8 lg:text-white bg-[#55B719] rounded-full hidden lg:block ">
               <div className="lg:flex items-center gap-2 font-manrope font-normal text-xs md:text-sm lg:text-base hidden">
                 <img src={buttonicon} alt="" />
                 Schedule A Call

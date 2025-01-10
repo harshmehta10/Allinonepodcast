@@ -1,6 +1,11 @@
 import React from "react";
 import tick from "../../assets/SVG/Tick.svg";
 import mictext from "../../assets/SVG/mictext.svg";
+import messagegreen from "../../assets/SVG/messagegreen.svg";
+import messagewhite from "../../assets/SVG/messagewhite.svg";
+import micstand from "../../assets/SVG/micstand.svg";
+import playbtngreen from "../../assets/SVG/playbtngreen.svg";
+import slack from "../../assets/Images/Home/slack.png";
 
 const NewPodcastSetup = () => {
   const podcast = [
@@ -81,14 +86,49 @@ const NewPodcastSetup = () => {
                 </div>
               ))}
             </div>
-            <div>
+            <div className="block lg:hidden"></div>
+            <div className="block lg:hidden"></div>
+            <div className="block lg:hidden"></div>
+            <div className="block lg:hidden"></div>
+
+            <div className="relative w-full">
+              <img
+                src={messagegreen}
+                alt=""
+                className="absolute right-20 bottom-32  lg:top-0 lg:right-16 z-50 w-20 lg:w-auto "
+              />
+              <img
+                src={messagewhite}
+                alt="  "
+                className="absolute  left-10 bottom-16 lg:top-20 lg:left-10  z-50 w-20 lg:w-auto"
+              />
+              <img
+                src={micstand}
+                alt="micstand"
+                className="absolute left-32 -bottom-4  lg:bottom-40 lg:left-80  w-16 lg:w-auto "
+              />
+              <img
+                src={playbtngreen}
+                alt=""
+                className=" absolute w-16 lg:w-auto bottom-12 right-24 lg:top-36 lg:right-0  "
+              />
+            </div>
+            <div className="relative  ">
+              <img
+                src={slack}
+                alt=""
+                className="fixed bottom-0 right-0 z-[999] h-20 hover:scale-110 cursor-pointer transition-transform duration-200"
+              />
+            </div>
+
+            {/* <div>
               <img
                 src={mictext}
                 alt=""
                 data-aos="fade-left"
                 data-aos-delay="1000"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -2,8 +2,21 @@ import React from "react";
 import playbtn from "../../assets/SVG/playbtn.svg";
 import zif from "../../assets/SVG/zif.svg";
 import player from "../../assets/SVG/player.svg";
+import { motion } from "framer-motion";
 
 const Process = () => {
+  const lineVariants = {
+    animate: (index) => ({
+      y: [0, -5, 5, 0], // Moves up and down
+      transition: {
+        duration: 2, // Duration for one wave
+        repeat: Infinity, // Infinite looping
+        ease: "easeInOut",
+        delay: index * 0.2, // Stagger animation for each bar
+      },
+    }),
+  };
+
   const processData = [
     {
       name: "Consulation",
@@ -102,11 +115,38 @@ const Process = () => {
             Podcast hosting to manage and monetize your podcast
           </h1>
           <div>
-            <img
-              src={zif}
-              alt="zif"
+            <motion.svg
               className="absolute z-50 right-10 md:right-20 lg:right-48 top-10 w-10  lg:w-auto "
-            />
+              width="90"
+              height="47"
+              viewBox="0 0 90 47"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {[
+                { x: "0", y: "14", height: "19" },
+                { x: "12", y: "0", height: "47" },
+                { x: "24", y: "10", height: "31" },
+                { x: "60", y: "10", height: "31" },
+                { x: "72", y: "10", height: "31" },
+                { x: "36", y: "0", height: "47" },
+                { x: "84", y: "0", height: "47" },
+                { x: "48", y: "14", height: "19" },
+              ].map((rect, index) => (
+                <motion.rect
+                  key={index}
+                  x={rect.x}
+                  y={rect.y}
+                  width="6"
+                  height={rect.height}
+                  rx="3"
+                  fill="#FFD74B"
+                  custom={index}
+                  variants={lineVariants}
+                  animate="animate"
+                />
+              ))}
+            </motion.svg>
           </div>
 
           <img
