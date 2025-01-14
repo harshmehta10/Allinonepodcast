@@ -118,7 +118,7 @@ const Process = () => {
             <motion.svg
               className="absolute z-50 right-10 md:right-20 lg:right-48 top-10 w-10  lg:w-auto "
               width="90"
-              height="47"
+              height="57"
               viewBox="0 0 90 47"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

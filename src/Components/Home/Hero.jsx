@@ -8,12 +8,12 @@ import get from "../../assets/SVG/getst.svg";
 const Hero = () => {
   return (
     <div className="">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 relative lg:h-[650px] overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-2 ">
+      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-28 relative lg:h-[650px] overflow-hidden">
+        <div className="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2 ">
           <div className="flex items-center">
             <div className="space-y-8 lg:space-y-14 ">
               <div className="space-y-5 lg:space-y-8 relative z-10 bg-white ">
-                <h1 className="max-w-[527px] font-manrope font-medium text-2xl md:text-3xl lg:text-5xl lg:leading-[60px] text-center lg:text-start mx-auto lg:mx-0  ">
+                <h1 className="max-w-[527px] font-manrope font-medium text-[26px] md:text-3xl lg:text-5xl lg:leading-[60px] text-center lg:text-start mx-auto lg:mx-0  ">
                   Podcast hosting to manage and monetize your{" "}
                   <span className="text-[#55B719]">podcast</span>
                 </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="flex space-x-1 lg:space-x-4 justify-center lg:justify-start">
-                <button className="py-4 px-9 flex items-center font-manrope text-[22px] font-medium rounded-[120px] bg-[#55B719] group relative">
+                <button className="py-4 px-9 flex items-center font-manrope text-22 font-medium rounded-[120px] bg-[#55B719] group relative">
                   {/* Button Label */}
                   <div className=" group-hover:-translate-x-4 transition-all duration-500">
                     <span className="text-white">Get Started</span>
@@ -43,26 +43,26 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="mx-auto ">
+          <div className=" flex  lg:block order-first lg:order-last">
             <img
               src={greenvector}
               alt="greenvector"
-              className="relative z-[999] h-[480px] w-[280px] right-[240px] -top-4 animate-scale-loop "
+              className="relative  h-[250px] lg:h-[480px] w-[150px] lg:w-[280px] -right-8 lg:right-10 top-8 lg:-top-6 animate-scale-loop "
               data-aos="fade-left"
               data-aos-delay="600"
             />
             <img
               src={mic}
               alt="mic"
-              className="relative right-0 lg:absolute lg:right-0  lg:top-0 h-60 md:h-[400px] lg:h-[400px] xl:h-[600px] xl:-top-10 mx-auto lg:mx-0 z-[999]"
+              className="relative   lg:absolute -right-2 lg:right-0 -top-5 lg:top-0 h-80 md:h-[400px] lg:h-[400px] xl:h-[600px] xl:-top-10 mx-auto lg:mx-0 z-50"
               data-aos="fade-left"
               data-aos-delay="400"
             />
             <img
               src={yellbg}
               alt="yellow bg"
-              className="relative right-0 lg:absolute lg:right-4  lg:top-10 h-60 md:h-[400px] lg:h-[300px] xl:h-[480px] xl:top-12 mx-auto lg:mx-0"
-              data-aos="fade-left"
+              className="relative lg:absolute right-56 lg:right-4 top-7 lg:top-10 h-[260px] md:h-[400px] lg:h-[300px] xl:h-[480px] xl:top-12 mx-auto lg:mx-0 "
+              data-aos="fade-left "
             />
           </div>
         </div>

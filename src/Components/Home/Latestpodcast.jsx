@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import personpodcast from "../../assets/Images/Home/personpodcast.png";
-import arrowlftblack from "../../assets/SVG/arrowlftblack.svg";
+import arrowlft from "../../assets/SVG/arrowlft.svg";
 import arrowrgtwhite from "../../assets/SVG/arrowrgtwhite.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -57,7 +57,7 @@ const Latestpodcast = () => {
       <div className="flex items-center justify-between">
         {/* Header Section */}
         <h1 className="text-32 text-[#68BF33]">Latest Podcast</h1>
-        <button className="btn-2 text-[#55B719] border-[#55B719] border rounded-[120px] py-3 px-8 lg:py-5 lg:px-16">
+        <button className=" text-[#55B719] border-[#55B719] border rounded-[120px] py-3 px-8 lg:py-5 lg:px-16">
           View All
         </button>
       </div>
@@ -66,7 +66,7 @@ const Latestpodcast = () => {
         <div className="swiper-button-prev  cursor-pointer top-1/2 lg:top-1/4 left-0 absolute z-20  ">
           <button className="border rounded-[120px] bg-[#55B719]">
             <img
-              src={arrowlftblack}
+              src={arrowlft}
               alt="arrowback"
               className="py-2 px-3 lg:py-4 lg:px-12"
             />

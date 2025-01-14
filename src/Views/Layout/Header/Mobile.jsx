@@ -26,7 +26,7 @@ const Mobile = ({ isOpen, toggle }) => {
     <div
       className={`${
         isOpen ? "translate-x-0" : "-translate-x-full"
-      } transition-transform duration-300 transform fixed inset-0 w-full z-50`}
+      } transition-transform duration-300 transform fixed inset-0 w-full z-[999]`}
     >
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-4 bg-white min-h-svh flex flex-col justify-between">
         <div className="flex justify-between">

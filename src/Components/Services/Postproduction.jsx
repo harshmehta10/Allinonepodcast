@@ -1,6 +1,9 @@
 import React from "react";
 import tick from "../../assets/SVG/Tick.svg";
-import icons from "../../assets/SVG/icons.svg";
+import facebook from "../../assets/SVG/facebook.svg";
+import linkdinbig from "../../assets/SVG/linkdinbig.svg";
+import twitterbig from "../../assets/SVG/twitterbig.svg";
+import googleplus from "../../assets/SVG/googleplus.svg";
 
 const Postproduction = () => {
   const podcast = [
@@ -40,7 +43,7 @@ const Postproduction = () => {
               Post Production
             </h1>
           </div>
-          <div className="flex flex-col lg:flex-row gap-10 ">
+          <div className="flex flex-col space-y-24 lg:space-y-0 lg:flex-row gap-10 ">
             <div className="space-y-5">
               {podcast.map((items, idx) => (
                 <div
@@ -60,12 +63,30 @@ const Postproduction = () => {
                 </div>
               ))}
             </div>
-            <div>
+            <div className="relative lg:w-1/2">
               <img
-                src={icons}
+                src={googleplus}
                 alt=""
+                className="absolute -top-36 lg:-top-42 right-28 lg:right-32 z-50 size-28 lg:size-56"
+                data-aos="fade-right"
+              />
+              <img
+                src={linkdinbig}
+                alt=""
+                className="absolute right-10 lg:right-4 -top-20 lg:top-4 z-50 size-16 lg:size-32"
+                data-aos="fade-right"
+              />
+              <img
+                src={twitterbig}
+                alt=""
+                className="absolute left-16 lg:left-5 -top-24  lg:top-2 z-50 size-16 lg:size-32"
                 data-aos="fade-left"
-                data-aos-delay="1000"
+              />
+              <img
+                src={facebook}
+                alt=""
+                className="absolute -bottom-2 lg:bottom-5 right-40 lg:right-52 z-50 size-16 lg:size-32"
+                data-aos="fade-up"
               />
             </div>
           </div>

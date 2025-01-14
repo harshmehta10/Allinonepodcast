@@ -95,22 +95,27 @@ const NewPodcastSetup = () => {
               <img
                 src={messagegreen}
                 alt=""
-                className="absolute right-20 bottom-32  lg:top-0 lg:right-16 z-50 w-20 lg:w-auto "
+                className="absolute  -top-44  lg:top-0 right-24 lg:right-16 z-50 w-24 lg:w-auto "
+                data-aos="fade-left"
               />
               <img
                 src={messagewhite}
                 alt="  "
-                className="absolute  left-10 bottom-16 lg:top-20 lg:left-10  z-50 w-20 lg:w-auto"
+                className="absolute  left-10 bottom-16 lg:top-20 lg:left-10  z-50 w-28 lg:w-auto"
+                data-aos="fade-down"
               />
               <img
                 src={micstand}
                 alt="micstand"
-                className="absolute left-32 -bottom-4  lg:bottom-40 lg:left-80  w-16 lg:w-auto "
+                className="absolute left-32 -bottom-10  lg:bottom-40 lg:left-80  w-20 lg:w-auto "
+                data-aos="fade-up"
+                data-aos-offset="50"
               />
               <img
                 src={playbtngreen}
                 alt=""
-                className=" absolute w-16 lg:w-auto bottom-12 right-24 lg:top-36 lg:right-0  "
+                className=" absolute w-20 lg:w-auto  -top-28 lg:top-36 right-32 lg:right-0  "
+                data-aos="fade-right"
               />
             </div>
             <div className="relative  ">
