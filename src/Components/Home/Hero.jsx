@@ -47,7 +47,7 @@ const Hero = () => {
             <img
               src={greenvector}
               alt="greenvector"
-              className="relative  h-[250px] md:h-[400px] lg:h-[400px] xl:h-[480px] w-[150px] md:w-[250px] lg:w-[280px] -right-8 md:-right-44 lg:right-10 top-8 md:-top-5 lg:top-0 xl:-top-6 animate-scale-loop "
+              className="relative  h-[250px] md:h-[400px] lg:h-[400px] xl:h-[480px] w-[150px] md:w-[250px] lg:w-[280px] -right-8 md:-right-44 lg:right-10 top-8 md:-top-5 lg:top-0 xl:-top-20 animate-scale-loop "
               data-aos="fade-left"
               data-aos-delay="600"
             />
