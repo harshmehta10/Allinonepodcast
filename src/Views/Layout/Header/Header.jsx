@@ -2,28 +2,26 @@ import React, { useEffect, useState } from "react";
 import logo from "../../../assets/SVG/logo.svg";
 import slash from "../../../assets/SVG/slash.svg";
 import buttonicon from "../../../assets/SVG/buttonicon.svg";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import Mobile from "./Mobile";
 import menu from "../../../assets/SVG/menu.svg";
 
 const Header = () => {
+  const location = useLocation(); // Get the current path
   const [menu, setMenu] = useState(false);
   const toggle = () => {
     setMenu(!menu);
   };
   const navbar = [
     {
-      path: "/about us",
-      Element: "About Us",
+      path: "/",
+      Element: "Home",
     },
     {
       path: "/services",
       Element: "Our Services",
     },
-    {
-      path: "/blog",
-      Element: "Blog",
-    },
+
     {
       path: "/contact",
       Element: "Contact Us",
@@ -50,15 +48,23 @@ const Header = () => {
               <img src={logo} alt="logo" className="w-24 lg:w-auto" />
             </Link>
 
-            <ul className=" flex-col lg:flex-row items-center space-x-4 md:space-x-5 lg:space-x-5 xl:space-x-12 hidden lg:block   ">
+            <ul className="flex-col lg:flex-row items-center space-x-4 md:space-x-5 lg:space-x-5 xl:space-x-12 hidden lg:block">
               {navbar.map((items, idx) => (
                 <Link
                   to={items.path}
                   key={items.Element}
-                  className="font-manrope font-light text-sm md:text-lg lg:text-[22px] text-[#4B4B4B] hover:text-[#55B719] transition-all duration-500 relative group"
+                  className={`font-manrope font-light text-sm md:text-lg lg:text-[22px] ${
+                    location.pathname === items.path
+                      ? "text-[#55B719]" // Green color for active link
+                      : "text-[#4B4B4B]"
+                  } hover:text-[#55B719] transition-all duration-500 relative group`}
                 >
                   {items.Element}
-                  <span className="w-0 group-hover:w-full h-0.5 transition-all duration-500  bg-[#55B719] absolute  -bottom-1 left-0"></span>
+                  <span
+                    className={`${
+                      location.pathname === items.path ? "w-full" : "w-0"
+                    } group-hover:w-full h-0.5 transition-all duration-500 bg-[#55B719] absolute -bottom-1 left-0`}
+                  ></span>
                 </Link>
               ))}
             </ul>

@@ -111,6 +111,7 @@ const Process = () => {
           data-aos="zoom-in"
         >
           <div className="bg-black w-full h-full absolute bg-opacity-20 "></div>
+
           <h1 className="text-center text-white font-manrope font-medium text-xl md:text-4xl lg:text-7xl max-w-[800px]  ">
             Podcast hosting to manage and monetize your podcast
           </h1>

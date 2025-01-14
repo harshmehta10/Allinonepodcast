@@ -67,25 +67,25 @@ const Postproduction = () => {
               <img
                 src={googleplus}
                 alt=""
-                className="absolute -top-36 lg:-top-42 right-28 lg:right-32 z-50 size-28 lg:size-56"
+                className="absolute -top-36 md:-top-44 lg:-top-20 xl:-top-42 right-28 lg:right-32 z-50 size-28 lg:size-48 xl:size-56"
                 data-aos="fade-right"
               />
               <img
                 src={linkdinbig}
                 alt=""
-                className="absolute right-10 lg:right-4 -top-20 lg:top-4 z-50 size-16 lg:size-32"
+                className="absolute right-10 lg:right-8 xl:right-4 -top-20 lg:top-12 xl:top-4 z-50 size-16 lg:size-24 xl:size-32"
                 data-aos="fade-right"
               />
               <img
                 src={twitterbig}
                 alt=""
-                className="absolute left-16 lg:left-5 -top-24  lg:top-2 z-50 size-16 lg:size-32"
+                className="absolute left-16 md:left-96 lg:-left-20 xl:left-5 -top-24 lg:top-16 xl:top-2 z-50 size-16 lg:size-24 xl:size-32"
                 data-aos="fade-left"
               />
               <img
                 src={facebook}
                 alt=""
-                className="absolute -bottom-2 lg:bottom-5 right-40 lg:right-52 z-50 size-16 lg:size-32"
+                className="absolute -bottom-2 md:-bottom-3 lg:bottom-10 xl:bottom-5 right-40 lg:right-40 xl:right-52 z-50 size-16 lg:size-24 xl:size-32"
                 data-aos="fade-up"
               />
             </div>

@@ -47,21 +47,21 @@ const Hero = () => {
             <img
               src={greenvector}
               alt="greenvector"
-              className="relative  h-[250px] lg:h-[480px] w-[150px] lg:w-[280px] -right-8 lg:right-10 top-8 lg:-top-6 animate-scale-loop "
+              className="relative  h-[250px] md:h-[400px] lg:h-[400px] xl:h-[480px] w-[150px] md:w-[250px] lg:w-[280px] -right-8 md:-right-44 lg:right-10 top-8 md:-top-5 lg:top-0 xl:-top-6 animate-scale-loop "
               data-aos="fade-left"
               data-aos-delay="600"
             />
             <img
               src={mic}
               alt="mic"
-              className="relative   lg:absolute -right-2 lg:right-0 -top-5 lg:top-0 h-80 md:h-[400px] lg:h-[400px] xl:h-[600px] xl:-top-10 mx-auto lg:mx-0 z-50"
+              className="relative   lg:absolute -right-2 md:-right-60 lg:right-0 -top-5 md:-top-10 lg:top-28 xl:-top-10 h-80 md:h-[420px] lg:h-[400px] xl:h-[600px]   lg:mx-0 z-50"
               data-aos="fade-left"
               data-aos-delay="400"
             />
             <img
               src={yellbg}
               alt="yellow bg"
-              className="relative lg:absolute right-56 lg:right-4 top-7 lg:top-10 h-[260px] md:h-[400px] lg:h-[300px] xl:h-[480px] xl:top-12 mx-auto lg:mx-0 "
+              className="relative lg:absolute right-56 md:right-36 lg:right-0 xl:right-4 top-7 md:-top-5 lg:top-40 xl:top-12 h-[260px] md:h-[400px] lg:h-[300px] xl:h-[480px]  mx-auto lg:mx-0 "
               data-aos="fade-left "
             />
           </div>
