@@ -31,38 +31,38 @@ const Testimonial = () => {
 
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 pb-20 py-7 sm:py-14 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 pb-20 py-7 sm:py-14 overflow-hidden">
         <div className="flex flex-col lg:flex-row items-center space-y-20 lg:space-y-0">
           <div className="space-y-5  lg:space-y-7">
             <div className="space-y-6 lg:space-y-8">
               <h1 className="text-32 text-[#68BF33]">Testimonials</h1>
               <h1
-                className="font-manrope font-medium text-42 text-[#4B4B4B] max-w-[406px]"
+                className="font-manrope font-medium text-xl md:text-2xl lg:text-4xl text-[#4B4B4B] max-w-[406px]"
                 data-aos="fade-right"
               >
                 See what their story is with us
               </h1>
             </div>
             <p
-              className="font-manrope font-light text-22 text-[#4B4B4B] max-w-[710px]"
+              className="font-manrope font-light  text-base md:text-lg lg:text-xl text-[#4B4B4B] max-w-[710px]"
               data-aos="fade-right"
             >
               Allinone Podcast gives you the freedom and flexibility to make
               podcasting yours. Create and distribute unlimited podcast, get
               advanced analytics, monetize and promote in one simple.
             </p>
-            <div className="space-y-1">
+            <div className="space-y-2">
               <h1
-                className="font-manrope font-medium text-[#68BF33] text-3xl md:text-5xl lg:text-[82px]"
+                className="font-manrope font-medium text-[#68BF33] text-3xl md:text-5xl lg:text-7xl"
                 data-aos="fade-right"
               >
                 200{" "}
-                <span className="font-manrope font-light text-[#68BF33] text-3xl md:text-5xl lg:text-[82px]">
+                <span className="font-manrope font-light text-[#68BF33] text-3xl md:text-5xl lg:text-7xl">
                   +
                 </span>
               </h1>
               <p
-                className="font-manrope font-light text-[#4B4B4B] text-22"
+                className="font-manrope font-light text-[#4B4B4B] text-base md:text-lg lg:text-xl"
                 data-aos="fade-right"
               >
                 Reviews
@@ -114,7 +114,7 @@ const Testimonial = () => {
               >
                 {testimonials.map((item, index) => (
                   <SwiperSlide className="space-y-10">
-                    <p className="font-manrope font-light text-22 text-[#4B4B4B]">
+                    <p className="font-manrope font-light text-base md:text-lg lg:text-2xl text-[#4B4B4B]">
                       Allinone Podcast gives you the freedom and flexibility to
                       make podcasting yours. Create and distribute unlimited
                       podcast, get advanced analytics, monetize and promote in
@@ -122,7 +122,7 @@ const Testimonial = () => {
                     </p>
                     <div className="flex  items-center gap-5">
                       <img src={Clarrissa} alt="clarrissa" />
-                      <p className="font-manrope font-medium text-22px">
+                      <p className="font-manrope font-medium text-base md:text-lg lg:text-2xl ">
                         Clarrissa Nguyen
                       </p>
                     </div>

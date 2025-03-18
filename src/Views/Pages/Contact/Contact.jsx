@@ -5,7 +5,7 @@ import ukflag from "../../../assets/SVG/ukflag.svg";
 const Contact = () => {
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 space-y-6 lg:space-y-12">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 space-y-6 lg:space-y-12">
         <div>
           <h2
             className="text-[#4B4B4B] font-manrope font-light text-22"
@@ -74,7 +74,7 @@ const Contact = () => {
             <textarea
               rows={2}
               id="help"
-              className="bg-[#F0F0F0]  border border-[#D7D7D7] rounded-[120px] py-3 px-5 lg:w-full"
+              className="bg-[#F0F0F0]  border border-[#D7D7D7] rounded-[120px] py-3 px-5 lg:w-[105%] xl:w-[90%]"
             />
           </div>
           <div>
@@ -84,7 +84,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-12 xl:gap-10">
-          <div>
+          <div className="space-y-5">
             <h1 className="font-manrope font-medium text-42">Our Office</h1>
             <div className="flex items-start gap-5 py-3">
               <img src={indianflag} alt="india" />
@@ -93,7 +93,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="space-y-3">
+          <div className="space-y-5">
             <h1 className="font-manrope font-medium text-42">Contact</h1>
 
             <div className="flex items-center gap-5">
@@ -109,7 +109,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-5">
             <h1 className="font-manrope font-medium text-42">Email Us at</h1>
             <p className="font-manrope font-light text-22 text-[#55B719]">
               help@allinonepodast.com

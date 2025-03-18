@@ -16,24 +16,12 @@ const Pricing = () => {
         " Strategy & Cosultacy",
         " Strategy & Cosultacy",
         " Strategy & Cosultacy",
-        " Strategy & Cosultacy",
-        " Strategy & Cosultacy",
-        " Strategy & Cosultacy",
-        " Strategy & Cosultacy",
-        " Strategy & Cosultacy",
-        " Strategy & Cosultacy",
       ],
       button: ["Customize Your Plan"],
     },
     {
       name: "Stratergy to Distribution",
       child: [
-        smtick,
-        smcross,
-        smtick,
-        smtick,
-        smcross,
-        smtick,
         smtick,
         smcross,
         smtick,
@@ -58,12 +46,6 @@ const Pricing = () => {
         smtick,
         smcross,
         smtick,
-        smtick,
-        smcross,
-        smtick,
-        smtick,
-        smcross,
-        smtick,
       ],
       button: ["$48"],
     },
@@ -79,19 +61,13 @@ const Pricing = () => {
         smtick,
         smcross,
         smtick,
-        smtick,
-        smcross,
-        smtick,
-        smtick,
-        smcross,
-        smtick,
       ],
       button: ["$48"],
     },
   ];
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 space-y-10">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 space-y-10">
         <div className="space-y-5">
           <h1 className="text-32">Pricing</h1>
           <div className="grid grid-cols-2 md:grid-cols-2  lg:grid-cols-4 gap-1  ">

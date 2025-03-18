@@ -42,7 +42,7 @@ const Header = () => {
       <Mobile isOpen={menu} toggle={toggle} />
 
       <div className=" bg-white">
-        <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-4 ">
+        <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-4 ">
           <nav className="flex items-center justify-between">
             <Link to="/">
               <img src={logo} alt="logo" className="w-24 lg:w-auto" />

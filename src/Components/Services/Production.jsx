@@ -118,17 +118,17 @@ const Production = () => {
 
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 overflow-hidden">
         <div className="space-y-12">
           <div className="flex">
             <h1
-              className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-[52px] border-[#55B719] border-2 rounded-[120px] py-3 px-5 lg:py-7 lg:px-20"
+              className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-4xl  border-[#55B719] border-2 rounded-[120px] py-3 px-5 lg:py-6 lg:px-16"
               data-aos="fade-right"
             >
               02.
             </h1>
             <h1
-              className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-[52px] bg-[#55B719] text-white rounded-[120px]  py-3 px-5 lg:py-7 lg:px-20"
+              className="font-manrope font-semibold text-2xl lg:leading-none  md:text-3xl lg:text-4xl bg-[#55B719] text-white rounded-[120px]  py-3 px-5 lg:py-6 lg:px-16"
               data-aos="fade-left"
               data-aos-delay="800"
             >
@@ -161,12 +161,16 @@ const Production = () => {
                 data-aos="fade-left"
                 data-aos-delay="1000 "
               >
-                <img src={playgreenbtn} alt="" className="size-14 lg:size-24" />
+                <img
+                  src={playgreenbtn}
+                  alt=""
+                  className="size-14 lg:size-24 xl:size-20"
+                />
 
                 <motion.svg
-                  className="w-[300px] lg:w-[363px] h-[67px] lg:h-[87px]"
-                  width="363"
-                  height="87"
+                  className="w-[300px] lg:w-[363px] xl:w-[350px] h-[67px] lg:h-[87px] xl:h-[80px]"
+                  width="350"
+                  height="80"
                   viewBox="0 0 300 47"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -177,9 +181,9 @@ const Production = () => {
                       key={`green-${index}`}
                       x={rect.x}
                       y={rect.y}
-                      width="6"
+                      width="5"
                       height={rect.height}
-                      rx="3"
+                      rx="2"
                       fill="#55B719" // Green color
                       transform={rect.transform || ""}
                       custom={index}
@@ -197,11 +201,11 @@ const Production = () => {
                 <img
                   src={playyellowbtn}
                   alt=""
-                  className="size-14  lg:size-24"
+                  className="size-14  lg:size-24 xl:size-20"
                 />
                 <motion.svg
-                  className="w-[250px] sm:w-[300px] lg:w-[363px] h-[47px] sm:h-[67px] lg:h-[87px]"
-                  viewBox="0 0 363 47"
+                  className="w-[250px] sm:w-[300px] lg:w-[363px] h-[47px] sm:h-[67px] lg:h-[87px] xl:h-[80px]"
+                  viewBox="0 0 300 47"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   preserveAspectRatio="xMidYMid meet"
@@ -213,7 +217,7 @@ const Production = () => {
                       y={bar.y}
                       width={bar.width}
                       height={bar.height}
-                      rx="3"
+                      rx="2"
                       fill="#FFD74B" // Yellow color
                       custom={index}
                       variants={barVariants}

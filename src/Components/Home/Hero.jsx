@@ -8,7 +8,7 @@ import get from "../../assets/SVG/getst.svg";
 const Hero = () => {
   return (
     <div className="">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-28 relative lg:h-[650px] overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-28 relative lg:h-[650px] overflow-hidden">
         <div className="grid grid-cols-1 gap-4 lg:gap-0 lg:grid-cols-2 ">
           <div className="flex items-center">
             <div className="space-y-8 lg:space-y-14 ">
@@ -27,12 +27,12 @@ const Hero = () => {
               <div className="flex space-x-1 lg:space-x-4 justify-center lg:justify-start">
                 <button className="py-4 px-9 flex items-center font-manrope text-22 font-medium rounded-[120px] bg-[#55B719] group relative">
                   {/* Button Label */}
-                  <div className=" group-hover:-translate-x-4 transition-all duration-500">
+                  <div className=" group-hover:-translate-x-2 transition-all duration-500">
                     <span className="text-white">Get Started</span>
                   </div>
 
                   {/* Image that appears on hover */}
-                  <div className="absolute right-3 invisible group-hover:visible group-hover:translate-x-2 transition-all duration-500">
+                  <div className="absolute right-4 invisible group-hover:visible group-hover:translate-x-1 transition-all duration-500">
                     <img src={get} alt="Icon" className="w-6 h-6" />
                   </div>
                 </button>
@@ -67,13 +67,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative  ">
+      {/* <div className="relative  ">
         <img
           src={slack}
           alt=""
           className="fixed bottom-0 right-0 z-[999] h-20 hover:scale-110 cursor-pointer transition-transform duration-200"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

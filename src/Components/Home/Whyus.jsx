@@ -4,7 +4,7 @@ import bgwhyus from "../../assets/SVG/bg-whyus.svg";
 const Whyus = () => {
   return (
     <div className="">
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 overflow-hidden">
         <div className="space-y-2 ">
           <h1 className="text-32 text-center" data-aos="fade-left">
             Why Us?

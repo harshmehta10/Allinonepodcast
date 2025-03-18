@@ -53,11 +53,13 @@ const Latestpodcast = () => {
     },
   ];
   return (
-    <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 space-y-10 pb-14 overflow-hidden">
+    <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 space-y-10 pb-14 overflow-hidden">
       <div className="flex items-center justify-between">
         {/* Header Section */}
-        <h1 className="text-32 text-[#68BF33]">Latest Podcast</h1>
-        <button className=" text-[#55B719] border-[#55B719] border rounded-[120px] py-3 px-8 lg:py-5 lg:px-16">
+        <h1 className="text-32 text-[#68BF33] font-manrope font-semibold text-3xl">
+          Latest Podcast
+        </h1>
+        <button className=" text-[#55B719] border-[#55B719] text-xl border rounded-[120px] py-3 px-8 lg:py-5 lg:px-16">
           View All
         </button>
       </div>
@@ -113,10 +115,10 @@ const Latestpodcast = () => {
                 <h1 className="text-left font-manrope text-base  md:text-lg lg:text-2xl font-semibold">
                   {podcast.title}
                 </h1>
-                <p className="text-left max-w-[600px] font-manrope font-normal  text-sm md:text-lg lg:text-[22px] text-[#4B4B4B]">
+                <p className="text-left max-w-[600px] font-manrope font-normal  text-sm md:text-base lg:text-lg text-[#4B4B4B]">
                   {podcast.description}
                 </p>
-                <p className="text-left font-manrope font-normal  text-18 text-[#7E7E7E]">
+                <p className="text-left font-manrope font-normal  text-lg text-[#7E7E7E]">
                   {podcast.date}
                 </p>
               </div>

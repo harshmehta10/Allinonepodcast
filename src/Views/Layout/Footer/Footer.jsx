@@ -7,7 +7,7 @@ import linkdin from "../../../assets/SVG/linkdin.svg";
 const Footer = () => {
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14">
         <div className="bg-[#68BF33] border rounded-[200px] lg:rounded-full  py-16 lg:py-10 px-10">
           <div className="flex flex-col justify-center items-center md: space-y-4 lg:space-y-7">
             <div className="flex justify-center gap-6 items-center ">

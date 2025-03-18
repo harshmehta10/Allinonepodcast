@@ -25,7 +25,7 @@ const Faq = () => {
   ];
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 overflow-hidden">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 overflow-hidden">
         <div>
           <h1 className="text-32 text-[#68BF33]">FAQs</h1>
         </div>

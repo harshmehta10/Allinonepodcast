@@ -42,7 +42,7 @@ const Process = () => {
   ];
   return (
     <div>
-      <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 py-7 sm:py-14 overflow-hidden space-y-20">
+      <div className="max-w-screen-2xl mx-auto px-4 lg:px-10 xl:px-14 py-7 sm:py-14 overflow-hidden space-y-14">
         <div>
           <h1 className="text-32 text-center">Our Process</h1>
         </div>
@@ -105,17 +105,26 @@ const Process = () => {
             <div className="bg-white absolute -translate-x-1/2 left-1/2 -bottom-10 size-10"></div>
           </div>
         </div>
-
         <div
-          className="bg-[#55B719] rounded-[450px] flex items-center justify-center  border-[#68BF33] border-8 relative overflow-hidden py-20 px-5  md:py-28 md:px-5 lg:py-36 lg:px-5 group"
+          className="bg-[#55B719] rounded-[450px] flex items-center justify-center  border-[#68BF33] border-8 relative overflow-hidden  group"
           data-aos="zoom-in"
         >
           <div className="bg-black w-full h-full absolute bg-opacity-20 "></div>
-
-          <h1 className="text-center text-white font-manrope font-medium text-xl md:text-4xl lg:text-7xl max-w-[800px]  ">
+          <div className="w-full h-96 overflow-hidden flex justify-center items-center">
+            <iframe
+              className="w-[98%] h-[95%] relative z-10 rounded-[450px]"
+              src="https://www.youtube.com/embed/7k1ehaE0bdU?si=JrZYZTf25Vnj8OMQ&modestbranding=1&rel=0&showinfo=0&iv_load_policy=3"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+          {/* <h1 className="text-center text-white font-manrope font-medium text-xl md:text-3xl lg:text-6xl max-w-[800px]  ">
             Podcast hosting to manage and monetize your podcast
-          </h1>
-          <div>
+          </h1> */}
+
+          {/* <div>
             <motion.svg
               className="absolute z-50 right-10 md:right-20 lg:right-48 top-10 w-10  lg:w-auto "
               width="90"
@@ -148,20 +157,20 @@ const Process = () => {
                 />
               ))}
             </motion.svg>
-          </div>
+          </div> */}
 
-          <img
+          {/* <img
             src={playbtn}
             alt=""
-            className="absolute z-10 -translate-y-1/2 top-1/2 -translate-x-1/2 left-1/2 size-1/2  lg:size-auto group-hover:scale-105 transition-all duration-500"
-          />
-          <div>
+            className="absolute z-10 -translate-y-1/2 top-1/2 -translate-x-1/2 left-1/2 size-1/2  lg:size-1/2 group-hover:scale-105 transition-all duration-500"
+          /> */}
+          {/* <div>
             <img
               src={player}
               alt="player"
               className="absolute -bottom-5 lg:bottom-10 -translate-x-1/2 left-1/2 size-1/2 md:size-auto "
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
